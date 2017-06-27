@@ -1,31 +1,15 @@
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import App from './App'
+import router from './router'
 
-import routes from './config/routes'
-import store from './store/'
-import components from './components/' //加载公共组件
+Vue.config.productionTip = false
 
-import './css/common.css'
-import './less/common.less'
-
-Object.keys(components).forEach((key) => {
-    var name = key.replace(/(\w)/, (v) => v.toUpperCase()) //首字母大写
-    Vue.component(`v${name}`, components[key])
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
 })
-
-Vue.use(VueRouter)
-
-const router = new VueRouter({
-    routes
-})
-router.beforeEach(({meta, path}, from, next) => {
-    var { auth = true } = meta
-    var isLogin = Boolean(store.state.user.id) //true 用户已登录， false 用户未登录
-
-    if (auth && !isLogin && path !== '/login') {
-        return next({ path: '/login' })
-    }
-    next()
-})
-
-new Vue({ store, router }).$mount('#app')
