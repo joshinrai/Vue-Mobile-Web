@@ -37,7 +37,7 @@
                 response) => {
                   console.log("the response is ...",response) ;
         }).then((error)=> this.error = error) ;*/
-        this.$router.push({ path: '/main' }) ;
+        this.$router.push({ path: '/homePage' }) ;
         console.log("this is log_cont ...") ;
       }
     },
