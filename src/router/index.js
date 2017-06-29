@@ -3,8 +3,13 @@ import Router from 'vue-router'
 import Login from '@/components/Login'
 import Main from '@/components/Main'
 import HomePage from '@/components/pages/HomePage'
+import MainMenu from '@/components/pages/MainMenu'
+
+import MuseUI from 'muse-ui'
+import 'muse-ui/dist/muse-ui.css'
 
 Vue.use(Router)
+Vue.use(MuseUI)
 
 export default new Router({
   routes: [
@@ -29,6 +34,14 @@ export default new Router({
           requireAuth: true,  
       },
       component: HomePage
+    },
+    {
+      path:'/mainMenu',
+      name:'MainMenu',
+      meta: {
+          requireAuth: true,  
+      },
+      component: MainMenu
     }
   ]
 })

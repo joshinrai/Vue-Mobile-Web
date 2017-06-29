@@ -31,6 +31,8 @@
     .footer{
       background-color:#333658;
       height:6vh;
+      position:fixed;
+      width:100vw;
     }
     .chintCopyRight{
       color:#aeb1d8;

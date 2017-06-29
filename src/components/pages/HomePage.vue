@@ -4,6 +4,8 @@
 		<myHead></myHead>
 	  	<div class="main_content">
 	        <newestAlert></newestAlert>
+	        <newestAction></newestAction>
+	        <gasProfile></gasProfile>
 	    </div>
 	    <myFoot></myFoot>
 	</div>
@@ -13,6 +15,8 @@
 	import myHead from '../header/Head'
 	import myFoot from '../footer/Foot'
 	import newestAlert from './NewestAlert'
+	import newestAction from './newestAction'
+	import gasProfile from './gasProfile'
 	export default {
 	  name: 'homePage',
 	  data () {
@@ -24,7 +28,7 @@
 	      
 	  },
 	  components: {
-	  	myHead,myFoot,newestAlert
+	  	myHead,myFoot,newestAlert,newestAction,gasProfile
 	  }
 	}
 </script>
@@ -48,5 +52,6 @@
     .main_content{
       background-color:#ddd;
       height:86vh;
+      overflow:auto;
     }
 </style>

@@ -2,11 +2,11 @@
 <template>
     <div class="container_ui__heading">
       <div class="menu_icon">
-        <img src="../../assets/menu.svg" alt="">
+        <img src="../../assets/menu.svg" alt="" @touchstart="menu_show">
       </div>
       <h1>首页</h1>
       <div class="config_icon">
-        <img src="../../assets/config.svg" alt="">
+        <img src="../../assets/config.svg" alt="" @touchstart="config_show">
       </div>
     </div>
 </template>
@@ -20,7 +20,13 @@
 	    }
 	  },
     methods: {
-      
+      menu_show () {
+        console.log("this is menu ...") ;
+        
+      },
+      config_show () {
+        console.log("this is config ...") ;
+      }
     },
     components: {
 
