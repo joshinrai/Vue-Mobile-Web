@@ -79,7 +79,25 @@
       <li><img src="../../images/roll-back.svg" alt="Key icon" class="icon"><span>返回主页</span></li>
     </ul>
 </template>
-
+<!--touchMainMenu (){
+        var $submenu = $('.submenu');
+        var $mainmenu = $('.mainmenu');
+        $mainmenu.on('touchstart','li',function(){
+          $(this).next('.submenu').slideToggle().siblings('.submenu').slideUp();
+        }) ;
+        $mainmenu.children('li:last-child').on('touchstart', function() {
+          $mainmenu.fadeOut().delay(500);
+        });
+        self.bindTouchLi($submenu) ;
+      }
+      touchSubMenu () {
+        $submenu.on('touchstart','li', function() {
+          $submenu.siblings().find('li').removeClass('chosen');
+          $(this).addClass('chosen');
+          var path = $(this).attr("src") ;
+          self.getDiffModules(path) ;
+        });
+      }-->
 <script>
 	export default {
 	  name: 'mainMenu',
@@ -92,6 +110,7 @@
       test () {
         console.log("this is menu ...") ;
       }
+
     },
     components: {
 
