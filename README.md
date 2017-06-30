@@ -3,6 +3,8 @@
 ## 安装依赖
 * npm install
 * npm install axios -S //vue的ajax插件
+* npm install muse-ui -save  //使用muse-ui组件
+* npm install cheerio	//npm环境下的类jQuery插件
 
 ## 启动项目
 * npm run dev

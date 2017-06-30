@@ -7,9 +7,11 @@ import MainMenu from '@/components/pages/MainMenu'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
+import cheerio from 'cheerio'
 
 Vue.use(Router)
 Vue.use(MuseUI)
+Vue.use(cheerio)
 
 export default new Router({
   routes: [
