@@ -17,8 +17,12 @@
 ├── config                                      // 项目打包路径
 ├── src                                         // 源码目录
 │   ├── components                              // 组件
-│   │   ├── Login                              	// 登录组件
-│   │   └── Main                              	// 主页组件
+│   │   ├── Login.vue                           // 登录组件
+│   │   ├── Main.vue                            // 主页组件
+│   │   ├── footer 								// 公共尾部
+│   │   ├── header 								// 公共头部
+│   │   ├── pages 								// 各个子页面
+│   │   └── plugins 							// 各个组件
 │   ├── images                                  // 公共图片(编译时可用)
 │   ├── router
 │   │   └── router.js                           // 路由配置
