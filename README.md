@@ -28,6 +28,7 @@
 │   │   └── router.js                           // 路由配置
 │   ├── App.vue                                 // 页面入口文件
 │   └── main.js                                 // 程序入口文件，加载各种公共组件
+├── static                                      // 静态资源，用于index时，非编译环境中
 ├── favicon.ico                                 // 图标
 └──index.html                                  	// 入口html文件
 .
