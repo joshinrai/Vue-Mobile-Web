@@ -41,6 +41,8 @@
     }
     .gasProfile_container{
       overflow:auto;
+      border-radius:0.5em;
+      margin:0.5em;
     }
     .content{
       font-size:2em;

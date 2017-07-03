@@ -29,13 +29,14 @@
       font-size:1.27em;
     }
     .footer{
-      background-color:#333658;
+      background-color:#948aec;
       height:6vh;
       position:fixed;
       width:100vw;
+      bottom:0;
     }
     .chintCopyRight{
-      color:#aeb1d8;
+      color:#404040;
       display:inline-block;
       margin-top:1vh;
     }
