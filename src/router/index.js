@@ -4,6 +4,7 @@ import Login from '@/components/Login'
 import Main from '@/components/Main'
 import HomePage from '@/components/pages/HomePage'
 import MainMenu from '@/components/pages/MainMenu'
+import Test from '@/components/Test'
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
@@ -44,6 +45,14 @@ export default new Router({
           requireAuth: true,  
       },
       component: MainMenu
+    },
+    {
+      path:'/test',
+      name:'Test',
+      meta: {
+          requireAuth: true,  
+      },
+      component: Test
     }
   ]
 })

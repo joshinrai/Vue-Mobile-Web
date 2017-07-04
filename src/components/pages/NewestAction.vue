@@ -75,7 +75,7 @@
 <!-- 添加 "scoped" 属性用于限制样式只作用域当前组件 -->
 <style scoped>
     *{
-      font-size:1.1em;
+      font-size:1em;
     }
     .newest_action{
       overflow:auto;
@@ -86,6 +86,6 @@
       font-size:2em;
     }
     .jo_table{
-      min-width:800px;
+      min-width:350px;
     }
 </style>

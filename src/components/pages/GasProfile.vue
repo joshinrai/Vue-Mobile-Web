@@ -37,7 +37,7 @@
 <!-- 添加 "scoped" 属性用于限制样式只作用域当前组件 -->
 <style scoped>
     *{
-      font-size:1.1em;
+      font-size:1em;
     }
     .gasProfile_container{
       overflow:auto;
@@ -49,7 +49,7 @@
     }
     .jo_table{
       background-color:#fff;
-      min-width:100vw;
+      min-width:100%;
       text-align:left;
     }
     .jo_table td{

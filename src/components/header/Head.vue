@@ -2,28 +2,30 @@
 <template>
   <div>
     <div class="container_ui__heading" ref="container">
-      <div class="menu_icon">
-        <img src="../../assets/menu.svg" alt="" @touchstart="menu_toggle">
+      <div class="menu_icon" >
+        <img src="../../assets/menu.svg" alt="" @click="show = !show">
       </div>
-      <h1>燃气表管理平台</h1>
+      <h1>燃气表平台</h1>
       <div class="config_icon">
         <img src="../../assets/config.svg" alt="" @touchstart="config_toggle">
       </div>
     </div>
-    <ul class="mainmenu" @touchstart="touchMainMenu" ref="mainmenu">
-      <div v-for="item,index in menuItems" :key="index">
-          <li >
-            <img :src="item.img" alt="User icon" class="icon" />
-            <span>{{item.title}}</span>
-          </li>
-          <ul class="submenu">
-            <div class="expand-triangle"></div>
-            <li :src="val.value" v-for="val in item.value">
-              <span :src="val.value">{{val.title}}</span>
+    <transition name="fade">
+      <ul class="mainmenu" v-if="show" @touchstart="touchMainMenu">
+        <div v-for="item,index in menuItems" :key="index">
+            <li >
+              <img :src="item.img" alt="User icon" class="icon" />
+              <span>{{item.title}}</span>
             </li>
-          </ul>
-      </div>
-    </ul>
+            <ul class="submenu">
+              <div class="expand-triangle"></div>
+              <li :src="val.value" v-for="val in item.value">
+                <span :src="val.value">{{val.title}}</span>
+              </li>
+            </ul>
+        </div>
+      </ul>
+    </transition>
     <ul class="setting" ref="setting">
       <li>
         <img src="../../images/revenue.svg" alt="reset password" class="icon" />
@@ -37,13 +39,21 @@
   </div>
     
 </template>
-
+<!--this.$refs.setting.style.display = "none" ;
+    let menu = this.$refs.mainmenu.style.display ;
+    "block" == menu ? 
+      this.$refs.mainmenu.style.display = "none" : 
+      this.$refs.mainmenu.style.display = "block" ;
+    this.$refs.submenu[0].style.display = "block" ;
+-->
 <script>
 	export default {
 	  name: 'head',
 	  data () {
 	    return {
 	      msg: '头部' ,
+        show:false,
+
         menuItems : [
           {title:"营收管理",value:[
             {"title":"寻表开户","value":"/gasTblcustomer/show.do"},
@@ -92,11 +102,8 @@
     methods: {
       //菜单栏显隐效果
       menu_toggle () {
-        this.$refs.setting.style.display = "none" ;
-        let menu = this.$refs.mainmenu.style.display ;
-        "block" == menu ? 
-          this.$refs.mainmenu.style.display = "none" : 
-          this.$refs.mainmenu.style.display = "block" ;
+        
+        console.log("this is a test ...") ;
       },
       //设置栏显隐效果
       config_toggle () {
@@ -124,7 +131,7 @@
 <!-- 添加 "scoped" 属性用于限制样式只作用域当前组件 -->
 <style scoped>
     *{
-      font-size:1.27em;
+      font-size:1em;
     }
     .container {
       width: 100vw;
@@ -186,8 +193,9 @@
       position:absolute;
       width:100%;
       padding-bottom:6vh;
-      display:none;
+      display:block;
       z-index:1;
+      transition: all 1s ease;
     }
     .mainmenu > div > li {
       background-color: #e4644b;
@@ -247,12 +255,17 @@
     }
 
     /*------------ Sub Menu ------------*/
-    .submenu {
+    .mainmenu ul {
       box-sizing: border-box;
       color: #ae9f9f;
       font-size: 13px;
       content: " ";
+      display:none;
       /*opacity: 0.5;*/
+    }
+
+    .mainmenu div:first-child > ul{
+      display:block;
     }
 
     .submenu li {
@@ -337,6 +350,14 @@
       display:block;
       margin-left:1em;
       margin-top:0.25em;
+    }
+    
+    /****过渡效果****/
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+      opacity: 0
     }
 
     @keyframes flip {

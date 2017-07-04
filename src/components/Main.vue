@@ -42,7 +42,7 @@
 <!-- 添加 "scoped" 属性用于限制样式只作用域当前组件 -->
 <style scoped>
     *{
-      font-size:1.27em;
+      font-size:1em;
     }
     .container {
       width: 100vw;
