@@ -35,3 +35,7 @@
 
  m directories, n files
 ```
+
+## 项目截图
+* 初始页
+![](static/images/index.PNG)
