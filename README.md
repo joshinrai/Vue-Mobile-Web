@@ -38,4 +38,4 @@
 
 ## 项目截图
 * 初始页
-![](static/images/index.PNG)
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/static/images/index.png" width="365" height="619"/> 
