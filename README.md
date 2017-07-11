@@ -45,4 +45,4 @@
 
 
 * 主页
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/main.png" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/main.jpeg" width="300" height="400"/> 
