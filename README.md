@@ -43,6 +43,9 @@
 * 登录页
 <img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/login.png" width="300" height="400"/> 
 
-
 * 主页
 <img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/main.jpeg" width="300" height="400"/> 
+
+
+* 菜单
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/menue.jpeg" width="300" height="400"/> 
