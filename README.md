@@ -48,4 +48,4 @@
 
 
 * 菜单
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/menue.jpeg" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/menu.jpeg" width="300" height="400"/> 
