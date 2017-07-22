@@ -38,14 +38,14 @@
 
 ## 项目截图
 * 初始页
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/index.png" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/index.png" width="150" height="200"/> 
 
 * 登录页
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/login.png" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/login.png" width="150" height="200"/> 
 
 * 主页
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/main.jpeg" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/main.jpeg" width="150" height="200"/> 
 
 
 * 菜单
-<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/menu.jpeg" width="300" height="400"/> 
+<img src="https://github.com/joshinrai/Vue-Mobile-Web/blob/master/static/images/menu.jpeg" width="150" height="200"/> 
